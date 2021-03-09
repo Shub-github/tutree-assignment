@@ -29,16 +29,16 @@ function validateSignUp(e)
     const emailpatt="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$";
     if(userFirstName.length<4)
     {
-//         console.log("SignUp Firstname error");
-//         console.log('USERNAME INSIDE ', userFirstName,);
+        console.log("SignUp Firstname error");
+        console.log('USERNAME INSIDE ', userFirstName,);
         return alert("Your First name length is less then 4");
     }
 
 
      if( userLastName.length<4)
     {
-//         console.log("Lastname error");
-//         console.log('USERNAME INSIDE ', userLastName,);
+        console.log("Lastname error");
+        console.log('USERNAME INSIDE ', userLastName,);
         return alert("Your Last name length is less than 4");
     }
 
@@ -46,7 +46,7 @@ function validateSignUp(e)
 
     if(userEmail.match(emailpatt))
     {
-        return alert("Enter valid email Id");
+        return alert("enter valid email Id");
     }
 
     // password
@@ -105,13 +105,29 @@ function validateLogin(e)
 
             if(user==storeDetails.email && pass1==storeDetails.password)
             {
-                return window.location.replace("./home.html");   
+                // console.log("signup details mathching");
+                return window.location.replace("./home.html");      
             }
             else
                 alert(" No user has been registered");
-                return window.location.replace("./index.html");
+                 return window.location.replace("./index.html");
+            
+            
             
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
