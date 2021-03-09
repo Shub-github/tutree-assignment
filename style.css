@@ -221,4 +221,8 @@
         font-size: 18px;
         min-width: 148px;
     }
+     .table-style{ 
+      padding: 5px;
+      font-family: serif;
+     }
  }
