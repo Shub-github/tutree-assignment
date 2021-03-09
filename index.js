@@ -65,7 +65,7 @@ function validateSignUp(e)
         // console.log(userDetails);
         sessionStorage.setItem('u', userDetails);
 
-         return window.location.replace("file:///F:/web%20development/3/index.html");
+         return window.location.replace("./index.html");
 
 }
 
@@ -105,11 +105,11 @@ function validateLogin(e)
             if(user==storeDetails.email && pass1==storeDetails.password)
             {
                 // console.log("signup details mathching");
-                return window.location.replace("file:///F:/web%20development/3/index.html");
+                return window.location.replace("./index.html");
                 
             }
             else
-            return window.location.replace("file:///F:/web%20development/3/home.html");
+            return window.location.replace("./home.html");
             //  console.log("redirecting to login page details page");
             
             
