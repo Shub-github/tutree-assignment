@@ -26,26 +26,27 @@ function validateSignUp(e)
     let userEmail = document.getElementById("emailId").value;
     let userPassword=document.getElementById("pass2").value;
     const patt = /^[A-Za-z]\w{7,14}$/;
+    const emailpatt="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$";
     if(userFirstName.length<4)
     {
-        console.log("SignUp Firstname error");
-        console.log('USERNAME INSIDE ', userFirstName,);
+//         console.log("SignUp Firstname error");
+//         console.log('USERNAME INSIDE ', userFirstName,);
         return alert("Your First name length is less then 4");
     }
 
 
      if( userLastName.length<4)
     {
-        console.log("Lastname error");
-        console.log('USERNAME INSIDE ', userLastName,);
+//         console.log("Lastname error");
+//         console.log('USERNAME INSIDE ', userLastName,);
         return alert("Your Last name length is less than 4");
     }
 
     // email
 
-    if(userEmail!=="@")
+    if(userEmail.match(emailpatt))
     {
-        console.log("enter valid email Id");
+        return alert("Enter valid email Id");
     }
 
     // password
@@ -86,7 +87,7 @@ function validateLogin(e)
                 return alert("No user has been registered")
             }
            
-            // why class tag not working
+             
             console.log("USERNAME ", user);
             console.log('PASSWORD', pass1);
             if(user.length < 5){
@@ -104,14 +105,11 @@ function validateLogin(e)
 
             if(user==storeDetails.email && pass1==storeDetails.password)
             {
-                // console.log("signup details mathching");
-                return window.location.replace("./index.html");
-                
+                return window.location.replace("./home.html");   
             }
             else
-            return window.location.replace("./home.html");
-            //  console.log("redirecting to login page details page");
-            
+                alert(" No user has been registered");
+                return window.location.replace("./index.html");
             
 }
 
