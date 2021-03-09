@@ -5,45 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        table, th, td {
-          border: 1px solid black;
-        }
-        table.center {
-          margin-left: auto;
-          margin-right: auto;
-          background-color: bisque;
-        }
-        </style>
-    
+    <link rel="stylesheet" href="style.css">
 <body>
+    <div class="hero">
+    <nav class="navbar background h-nav" id="home">
+        <ul class="nav-list v-class">
 
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Contact">Contact Us</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div> 
+    </nav>
     <h1><u> User Details</u> </h1>
     <table class="center">
         <tbody>
             <tr>
-                <td>First name</td>
-                <td id="firstName"></td>
+                <td class="table-style">First name</td>
+                <td class="table-style" id="firstName"></td>
             </tr>
             <tr>
-                <td>Last name</td>
-                <td id="lastName"></td>
+                <td class="table-style">Last name</td>
+                <td class="table-style" id="lastName"></td>
             </tr>
             <tr>
-                <td>email</td>
-                <td id="email"></td>
+                <td class="table-style">email</td>
+                <td class="table-style" id="email"></td>
             </tr>
             <tr>
-                <td>Password</td>
-                <td id="password"></td>
+                <td class="table-style">Password</td>
+                <td class="table-style" id="password"></td>
             </tr>
         </tbody>
     </table> 
-    </table> 
-
-     
-
+    </table>
+</div>
     <script src="home1.js"></script>
- 
+    <script src="burger.js"></script> 
 </body>
 </html>
